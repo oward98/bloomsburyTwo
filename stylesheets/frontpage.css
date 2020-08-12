@@ -1,0 +1,36 @@
+.bordered {
+    border: 1px solid var(--mid_grey);
+    border-radius: 4px;
+}
+
+.borderedTextBox h3 {
+    margin: 5px 0;
+    font-size: 1.5em;
+}
+
+.borderedTextBox span {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.borderedTextBox {
+    padding: 5px;
+}
+
+.borderedTexBox .pageThumbnailContainer {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#bloomsbury, #map {
+    flex-basis: 100%;
+}
+
+#bloomsbury .pageThumbnailContainer, #map .pageThumbnailContainer {
+    height: 300px;
+}
+
+#clientSection {
+    border-bottom: none;
+    padding: 0;
+}
