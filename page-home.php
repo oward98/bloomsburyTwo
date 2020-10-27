@@ -125,7 +125,7 @@
                 <div class='pageThumbnailContainer verticalFlex'>
                 <?=get_the_post_thumbnail(1098, 'large')?>
                 </div>
-                <div class='padded grow'>
+                <div class='padded grow verticalFlex'>
                     <header>
                         <h3>Kingsway</h3>
                         <span>Edwardian commercial magnificence</span>
