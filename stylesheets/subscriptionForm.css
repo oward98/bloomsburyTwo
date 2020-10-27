@@ -30,6 +30,7 @@
 
 #header-widget-container input {
     font-size: var(--subscription_font_size);
+    transition: var(--subcription_transition);
     background-color: var(--mid_grey);
     color: var(--light_grey);
     border-style: none;
@@ -39,16 +40,13 @@
     box-sizing: border-box; 
 }
 
-#header-widget-container input, #header-widget-container button {
-    transition: var(--subcription_transition);
-}
-
 #header-widget-container input:focus,  #header-widget input:hover {
     background-color: var(--dark_grey);
     outline: none;
 }
 
 #header-widget-container button {
+    transition: var(--subcription_transition);
     font-size: var(--subscription_font_size);
     height: 100%;
     border-style: none;
