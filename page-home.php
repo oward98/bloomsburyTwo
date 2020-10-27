@@ -122,7 +122,7 @@
                 </div>
             </a>
             <a id='kingsway' aria-label='Kingsway Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1098)?>>
-                <div class='pageThumbnailContainer verticalFlex'>
+                <div class='pageThumbnailContainer'>
                 <?=get_the_post_thumbnail(1098, 'large')?>
                 </div>
                 <div class='padded grow verticalFlex'>
