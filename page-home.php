@@ -31,8 +31,8 @@
                     <div class='conservationAreaDetails padded'>
                         <ul class='spaced'>
                             <li>Designated: 1968</li>
-                            <li>Significance: Exceptional</li>
-                            <li>Threat Level: High</li>
+                            <li>Significance: <mark class='exceptionalSignificance'>Exceptional</mark></li>
+                            <li>Threat Level: <mark class='highThreat'>High</mark></li>
                         </ul>
                     </div>
                 </div>
@@ -52,8 +52,8 @@
                     <div class='conservationAreaDetails padded'>
                         <ul class='spaced'>
                             <li>Designated: 1972</li>
-                            <li>Significance: High</li>
-                            <li>Threat Level: Medium</li>
+                            <li>Significance: <mark class='highSignificance'>High</mark></li>
+                            <li>Threat Level: <mark class='mediumThreat'>Medium</mark></li>
                         </ul>
                     </div>
                 </div>
@@ -73,8 +73,8 @@
                     <div class='conservationAreaDetails padded'>
                         <ul class='spaced'>
                             <li>Designated: 1984</li>
-                            <li>Significance: Medium</li>
-                            <li>Threat Level: High</li>
+                            <li>Significance: <mark class='mediumSignificance'>Medium</mark></li>
+                            <li>Threat Level: <mark class='highThreat'>High</mark></li>
                         </ul>
                     </div>
                 </div>
@@ -94,8 +94,8 @@
                     <div class='conservationAreaDetails padded'>
                         <ul class='spaced'>
                             <li>Designated: 1968</li>
-                            <li>Significance: High</li>
-                            <li>Threat Level: Low</li>
+                            <li>Significance: <mark class='highSignificance'>High</mark></li>
+                            <li>Threat Level: <mark class='lowThreat'>Low</mark></li>
                         </ul>
                     </div>
                 </div>
@@ -115,8 +115,8 @@
                     <div class='conservationAreaDetails padded'>
                         <ul class='spaced'>
                             <li>Designated: 1989</li>
-                            <li>Significance: Low</li>
-                            <li>Threat Level: High</li>
+                            <li>Significance: <mark class='lowSignificance'>Low</mark></li>
+                            <li>Threat Level: <mark class='highThreat'>High</mark></li>
                         </ul>
                     </div>
                 </div>
@@ -136,8 +136,8 @@
                     <div class='conservationAreaDetails padded'>
                         <ul class='spaced'>
                             <li>Designated: 1981</li>
-                            <li>Significance: High</li>
-                            <li>Threat Level: Low</li>
+                            <li>Significance: <mark class='highSignificance'>High</mark></li>
+                            <li>Threat Level: <mark class='lowThreat'>Low</mark></li>
                         </ul>
                     </div>
                 </div>
@@ -157,8 +157,8 @@
                     <div class='conservationAreaDetails padded'>
                         <ul class='spaced'>
                             <li>Designated: 1974</li>
-                            <li>Significance: High</li>
-                            <li>Threat Level: Low</li>
+                            <li>Significance: <mark class='highSignificance'>High</mark></li>
+                            <li>Threat Level: <mark class='lowThreat'>Low</mark></li>
                         </ul>
                     </div>
                 </div>
