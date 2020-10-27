@@ -124,8 +124,7 @@
 
 #header-widget-container form {
     display: flex;
-    height: 30px;
-
+    height: 27px;
 }
 
 #header-widget-container input {
