@@ -72,7 +72,7 @@
                     </div>
                     <div class='conservationAreaDetails padded'>
                         <ul class='spaced'>
-                            <li>Designated: 1972</li>
+                            <li>Designated: 1984</li>
                             <li>Significance: Medium</li>
                             <li>Threat Level: High</li>
                         </ul>
@@ -93,9 +93,9 @@
                     </div>
                     <div class='conservationAreaDetails padded'>
                         <ul class='spaced'>
-                            <li>Designated: 1972</li>
-                            <li>Significance: Medium</li>
-                            <li>Threat Level: High</li>
+                            <li>Designated: 1968</li>
+                            <li>Significance: High</li>
+                            <li>Threat Level: Low</li>
                         </ul>
                     </div>
                 </div>
@@ -114,8 +114,8 @@
                     </div>
                     <div class='conservationAreaDetails padded'>
                         <ul class='spaced'>
-                            <li>Designated: 1972</li>
-                            <li>Significance: Medium</li>
+                            <li>Designated: 1989</li>
+                            <li>Significance: Low</li>
                             <li>Threat Level: High</li>
                         </ul>
                     </div>
@@ -135,9 +135,9 @@
                     </div>
                     <div class='conservationAreaDetails padded'>
                         <ul class='spaced'>
-                            <li>Designated: 1972</li>
-                            <li>Significance: Medium</li>
-                            <li>Threat Level: High</li>
+                            <li>Designated: 1981</li>
+                            <li>Significance: High</li>
+                            <li>Threat Level: Low</li>
                         </ul>
                     </div>
                 </div>
@@ -156,9 +156,9 @@
                     </div>
                     <div class='conservationAreaDetails padded'>
                         <ul class='spaced'>
-                            <li>Designated: 1972</li>
-                            <li>Significance: Medium</li>
-                            <li>Threat Level: High</li>
+                            <li>Designated: 1974</li>
+                            <li>Significance: High</li>
+                            <li>Threat Level: Low</li>
                         </ul>
                     </div>
                 </div>
