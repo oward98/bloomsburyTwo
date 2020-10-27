@@ -124,7 +124,14 @@
 
 #header-widget-container form {
     display: flex;
-    height: 22px;
+    height: 30px;
+
+}
+
+#subscribe-email input {
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 0.8em;
 }
 
 #header-widget-container input {
@@ -153,7 +160,7 @@
     background-color: var(--dark_grey);
     transition: background-color 0.5s ease-in-out;
     color: var(--light_grey);
-    font-weight: 200;
+    font-size: 0.8em;
 }
 
 #header-widget-container button:hover {
