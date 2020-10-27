@@ -24,7 +24,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-input {
+input, button {
     font-family: var(--font);
 }
 
