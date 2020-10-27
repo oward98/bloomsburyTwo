@@ -1,26 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 html {
     --light_blue: #6a97a8;
     --dark_blue: #1c617a;
+    --turqoise: rgb(3, 44, 39);
     --light_grey: rgb(252, 255, 252);
     --mid_grey: #a8a8a8;
     --dark_grey: rgb(80,80,80);
     --very_dark_grey: #242424;
+    --radius: 2px;
     background-color: var(--mid_grey);
+    font-size: 18px;
 }
 
 body {
     max-width: 1400px;
     width: 95vw;
-    font-family: 'Open Sans', 'sans-serif';
+    font-family: 'serif';
     margin: 0 auto;
-    color: var(--dark_grey);
+    color: var(--very_dark_grey);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+    color: var(--very_dark_grey);
+    font-weight: 500;
 }
 
 a {

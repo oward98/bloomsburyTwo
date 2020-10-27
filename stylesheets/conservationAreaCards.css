@@ -1,0 +1,25 @@
+.conservationAreaCard header h3 {
+    margin: 5px 0;
+    font-size: 1.6em;
+}
+
+.conservationAreaCard header span {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.conservationAreaCard p {
+    color: var(--very_dark_grey);
+}
+
+.conservationAreaDetails {
+    bottom: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    background-color: var(--very_dark_grey);
+    color: var(--light_grey);
+    font-size: 0.9em;
+}
