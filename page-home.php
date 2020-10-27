@@ -110,7 +110,7 @@
                         <span>A curious backwater</span>
                     </header>
                     <div class='grow'>
-                        <p>The Hanway Street Conservation Area is possibly London's smallest conservation area comprising just two streets. Its curious winding street-pattern is an important remnant of London's pre-Georgian development.</p>
+                        <p>The Hanway Street Conservation Area is possibly London's smallest conservation area, comprising just two streets. Its curious winding street-pattern is an important remnant of London's pre-Georgian development.</p>
                     </div>
                     <div class='conservationAreaDetails padded'>
                         <ul class='spaced'>
