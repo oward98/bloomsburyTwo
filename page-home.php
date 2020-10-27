@@ -179,15 +179,15 @@
         </div>
     </section>
     <section id='clientSection' class='pageBanner'>
-        <a class='pagePreview'>
+        <a class='pagePreview' href=<?=get_permalink(955)?>>
             <h2>Residents -</h2>
             <span>Contact us if you think we should be making an objection to an application in your neighbourhood. You can also learn about our conservation areas, and how you can help us in safeguarding their heritage.</span>
         </a>
-        <a class='pagePreview'>
+        <a class='pagePreview' href=<?=get_permalink(994)?>>
             <h2>Businesses -</h2>
             <span>Putting in an application for a change of use or a new shopfront? Use our resources to learn about what is and is not acceptable, and how you can enhance our conservation areas.</span>
         </a>
-        <a class='pagePreview'>
+        <a class='pagePreview' href=<?=get_permalink(194)?>>
             <h2>Developers -</h2>
             <span>Get in touch at an early stage of proposals to receive feedback from the advisory committee. We can also attend meetings and conduct site visits. You can use our resources to learn about our conservation areas, and how to enhance them.</span>
         </a>
