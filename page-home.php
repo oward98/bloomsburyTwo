@@ -15,7 +15,7 @@
         <p>We cover seven conservation areas in the heart of historic London as an advisory committee, comprising all of Camden's Central London area, with the exception of Hatton Garden. Many of our conservation areas are children of the Bloomsbury Conservation Area or are in some way related to it.</p> 
         <p>We are consulted with on all changes to our conservation areas, and report on planning breaches in the area, while also supporting residents in heritage-based objections to applications in their neighbourhood.</p>
         <div class='pageBanner'>
-            <a id='bloomsbury' aria-label='Bloomsbury Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1061)?> target="_blank">
+            <a id='bloomsbury' aria-label='Bloomsbury Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1061)?>>
                 <div class='pageThumbnailContainer'>
                 <?=get_the_post_thumbnail(1061, 'full')?>
                 </div>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </a>
-            <a id='charlotteStreet' aria-label='Charlotte Street Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1090)?> target="_blank">
+            <a id='charlotteStreet' aria-label='Charlotte Street Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1090)?>>
                 <div class='pageThumbnailContainer'>
                 <?=get_the_post_thumbnail(1090, 'large')?>
                 </div>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </a>
-            <a id='denmarkStreet' aria-label='Denmark Street Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1092)?> target="_blank">
+            <a id='denmarkStreet' aria-label='Denmark Street Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1092)?>>
                 <div class='pageThumbnailContainer'>
                 <?=get_the_post_thumbnail(1092, 'large')?>
                 </div>
@@ -79,7 +79,7 @@
                     </div>
                 </div>
             </a>
-            <a id='fitzroySquare' aria-label='Fitzroy Square Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1094)?> target="_blank">
+            <a id='fitzroySquare' aria-label='Fitzroy Square Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1094)?>>
                 <div class='pageThumbnailContainer'>
                 <?=get_the_post_thumbnail(1094, 'large')?>
                 </div>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </a>
-            <a id='hanwayStreet' aria-label='Hanway Street Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1096)?> target="_blank">
+            <a id='hanwayStreet' aria-label='Hanway Street Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1096)?>>
                 <div class='pageThumbnailContainer'>
                 <?=get_the_post_thumbnail(1096, 'large')?>
                 </div>
@@ -121,7 +121,7 @@
                     </div>
                 </div>
             </a>
-            <a id='kingsway' aria-label='Kingsway Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1098)?> target="_blank">
+            <a id='kingsway' aria-label='Kingsway Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1098)?>>
                 <div class='pageThumbnailContainer verticalFlex'>
                 <?=get_the_post_thumbnail(1098, 'large')?>
                 </div>
@@ -142,7 +142,7 @@
                     </div>
                 </div>
             </a>
-            <a id='sevenDials' aria-label='Seven Dials Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1100)?> target="_blank">
+            <a id='sevenDials' aria-label='Seven Dials Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink(1100)?>>
                 <div class='pageThumbnailContainer'>
                 <?=get_the_post_thumbnail(1100, 'large')?>
                 </div>
