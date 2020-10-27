@@ -41,38 +41,6 @@ section {
     width: 100%;
 }
 
-#postMain {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -20px;
-    padding: 10px 0;
-    justify-content: space-between;
-}
-
-#postContent {
-    flex-basis: 300px;
-    flex-grow: 4;
-    margin: 0 20px;
-    overflow: hidden;
-    max-width: 700px;
-    font-size: 1.1em;
-    color: var(--dark_grey);
-}
-
-#postContent h2, #postContent h3, #postContent h4 {
-    margin-top: 40px;
-}
-
-#pageContent {
-    max-width: 1000px;
-}
-
-
-
-#postMain .pageThumbnailContainer {
-    height: 150px;
-}
-
 figure {
     border-radius: var(--radius);
     overflow: hidden;
@@ -181,8 +149,4 @@ ul.spaced li:last-of-type {
     border-bottom-style: dotted;
     border-bottom-width: 0.5px !important;
     border-bottom-color: var(--mid_grey) !important;
-}
-
-#postContent p:first-of-type {
-    margin-top: 10px;
 }

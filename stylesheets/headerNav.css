@@ -1,0 +1,95 @@
+.menu-main-container {
+    position: relative;
+}
+
+#siteHeader nav {
+    background-color: var(--very_dark_grey);
+    display: flex;
+    justify-content: center;
+    padding: 7px 20px;
+    border-bottom-right-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+
+#siteHeader nav div {
+    width: 100%;
+}
+
+#siteHeader #menu-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#siteHeader nav ul {
+    margin: 0;
+    padding: 1px;
+}
+
+#siteHeader nav li {
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 3%;
+    align-items: center;
+    font-size: 1em;
+}
+
+#siteHeader nav li a {
+    display: block;
+    color: var(--light_grey);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+#siteHeader nav li a:hover {
+    color: var(--light_blue);
+}
+
+/*submenus*/
+
+#siteHeader .sub-menu {
+    max-height: 0;
+    overflow: hidden;
+    padding: 5px 5px 0 5px;
+    transition: max-height 0.5s ease-in-out;
+    position: absolute;
+    background-color: var(--very_dark_grey);
+    border-radius: var(--radius);
+    z-index: 5;
+}
+
+#siteHeader .sub-menu li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 3px 5px;
+    font-size: 1em;
+}
+
+#siteHeader .menu-item-has-children:hover ul {
+    max-height: 500px;
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 660px) {
+
+    #siteHeader #menu-main {
+        display: block;
+    }
+    
+    #siteHeader nav ul {
+        column-width: 100px;
+    }
+    
+    #siteHeader nav li {
+        margin: 5px 0;
+    }
+    
+    #siteHeader nav li a {
+        font-size: 1em;
+    }
+
+    #siteHeader .sub-menu {
+        display: none;
+    }
+}
+
