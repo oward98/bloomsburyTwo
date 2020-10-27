@@ -12,7 +12,7 @@
 #header-widget-container {
     --subscription_font_size: 0.9em; 
     --subscription_form_height: 27px;
-    transition: background-color 0.5s ease-in-out;
+    --subscription_transition: background-color 0.5s ease-in-out;
     height: 100%;
     align-items: center;
     margin: 20px;
@@ -36,8 +36,11 @@
     border-width: 0;
     border-radius: var(--radius);
     height: 100%;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
+}
+
+#header-widget-container input, #header-widget-container button {
+    transition: var(--subcription_transition);
 }
 
 #header-widget-container input:focus,  #header-widget input:hover {
