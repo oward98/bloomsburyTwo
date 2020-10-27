@@ -9,6 +9,7 @@ html {
     --dark_grey: rgb(80,80,80);
     --very_dark_grey: #242424;
     --radius: 2px;
+    --font: 'serif';
     background-color: var(--mid_grey);
     font-size: 18px;
 }
@@ -16,11 +17,15 @@ html {
 body {
     max-width: 1400px;
     width: 95vw;
-    font-family: 'serif';
+    font-family: var(--font);
     margin: 0 auto;
     color: var(--very_dark_grey);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+    font-family: var(--font);
 }
 
 h1, h2, h3, h4, h5, h6 {
