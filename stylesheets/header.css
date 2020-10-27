@@ -128,21 +128,17 @@
 
 }
 
-#subscribe-email input {
-    height: 100%;
-    box-sizing: border-box;
-    font-size: 0.8em;
-}
-
 #header-widget-container input {
     background-color: var(--mid_grey);
     color: var(--light_grey);
     border-style: none;
     border-width: 0;
-    height: 20px;
     border-top-left-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
     transition: background-color 0.5s ease-in-out;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 0.8em;
 }
 
 #header-widget-container input:focus,  #header-widget input:hover {
