@@ -129,7 +129,7 @@
                     <header>
                         <h3>Kingsway</h3>
                         <span>Edwardian commercial magnificence</span>
-                    <header>
+                    </header>
                     <div class='grow'>
                         <p>The Kingsway represents one of the most ambitious commercial building projects in London's history. It retains its Edwardian character remarkably well, although is blighted by traffic and has suffered from poor investment in the public realm.</p>
                     </div>
