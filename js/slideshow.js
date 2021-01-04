@@ -1,15 +1,15 @@
-const startSlideshow = () => {
-    let slideIndex = -1;
+function startSlideshow() {
+    var slideIndex = -1;
 
-    const frontSlides = document.getElementById('mainSlideshow').getElementsByClassName("slide");
-    const backgroundSlides = document.getElementById('backgroundSlideshow').getElementsByClassName("slide");
-    const numOfSlides = frontSlides.length;
+    var frontSlides = document.getElementById('mainSlideshow').getElementsByClassName("slide");
+    var backgroundSlides = document.getElementById('backgroundSlideshow').getElementsByClassName("slide");
+    var numOfSlides = frontSlides.length;
 
     function nextSlide() {
-        for (let i = 0; i < numOfSlides; i ++) {
+        for (var i = 0; i < numOfSlides; i ++) {
             frontSlides[i].style.opacity = 0;
             frontSlides[i].style.zIndex = 0;
-            setTimeout(() => {
+            setTimeout(function() {
                 backgroundSlides[i].style.opacity = 0;
                 backgroundSlides[i].style.zIndex = -10;
             }, 500);
@@ -20,7 +20,7 @@ const startSlideshow = () => {
         frontSlides[slideIndex].style.opacity = 1;
         frontSlides[slideIndex].style.zIndex = 1;
 
-        setTimeout(()=> { 
+        setTimeout(function() { 
             backgroundSlides[slideIndex].style.opacity = 1
             backgroundSlides[slideIndex].style.zIndex = -9;
         }, 500);
@@ -30,25 +30,3 @@ const startSlideshow = () => {
 }
 
 window.addEventListener('load', startSlideshow);
-
-/*
-function transitionSlides() {
-    const frontSlides = document.getElementById('mainSlideshow').getElementsByClassName("slide");
-    const backgroundSlides = document.getElementById('backgroundSlideshow').getElementsByClassName("slide");
-
-    const numOfSlides = frontSlides.length;
-
-    console.log('hi')
-    console.log(frontSlides);
-
-    for (let i = 0; true; i ++) {
-        const slideIndex = i % 3;
-        for (i = 0; i < numOfSlides; i++) { frontSlides[i].style.opacity = 0 };
-        frontSlides[slideIndex].style.opacity = 1;
-        setTimeout(()=> {
-            for (i = 0; i < numOfSlides; i++) { backgroundSlides[i].style.opacity = 0 };
-            backgroundSlides[slideIndex].style.opacity = 1;
-        }, 500);
-    }
-}
-*/
