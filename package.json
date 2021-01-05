@@ -1,0 +1,30 @@
+{
+  "name": "bloomsbury",
+  "version": "1.0.0",
+  "description": "a wordpress theme for the bloomsbury conservation areas advisory committee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oward98/bloomsbury.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oward98/bloomsbury/issues"
+  },
+  "homepage": "https://github.com/oward98/bloomsbury#readme",
+  "dependencies": {
+    "cssnano": "^4.1.10",
+    "postcss-import": "^14.0.0",
+    "postcss-preset-env": "^6.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-postcss": "^9.0.0",
+    "postcss": "^8.2.2"
+  }
+}
