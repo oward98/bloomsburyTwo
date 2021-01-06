@@ -1,0 +1,54 @@
+#postContent {
+    flex-basis: 300px;
+    flex-grow: 1.8;
+    margin: -20px 30px 0 0;
+    overflow: hidden;
+    font-size: 1.25em;
+    color: var(--dark_grey);
+    border-right: 1px solid var(--light_grey);
+    padding: 20px 35px;
+}
+
+#postMain {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 0;
+    border-top: 1px solid var(--mid_grey);
+    border-bottom: 1px solid var(--light_grey);
+    justify-content: space-between;
+}
+
+#postContent h2, #postContent h3, #postContent h4 {
+    color: var(--very_dark_grey);
+}
+
+#postContent h2 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 1.5em
+}
+
+#postContent h3 {
+    font-size: 1.25em;
+    margin-bottom: 12px;
+}
+
+#postMain .pageThumbnailContainer {
+    height: 150px;
+}
+
+#postContent p:first-of-type {
+    margin-top: 0;
+}
+
+#infoSidebar {
+    padding-left: 20px;
+    margin-top: -20px;
+    padding-top: 20px;
+    margin-left: -22px;
+    padding-left: 22px;
+    flex-grow: 0.7;
+    flex-basis: 150px;
+    height: 500px;
+}

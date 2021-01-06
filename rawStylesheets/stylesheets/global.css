@@ -4,13 +4,16 @@ html {
     --light_blue: #6a97a8;
     --dark_blue: #1c617a;
     --turqoise: rgb(3, 44, 39);
-    --light_grey: rgb(252, 255, 252);
-    --mid_grey: #a8a8a8;
-    --dark_grey: rgb(80,80,80);
-    --very_dark_grey: #242424;
+    --white: rgb(255, 255, 254);
+    --very_light_grey: rgb(217, 220, 221);
+    --light_grey: #bdbdbd;
+    --mid_grey: #8f8f8f;
+    --dark_grey: rgb(62, 62, 63);
+    --very_dark_grey: #131613;
     --radius: 2px;
     --font: 'serif';
-    background-color: var(--mid_grey);
+    --outer_padding: 22px;
+    background-color: var(--very_dark_grey);
     font-size: 18px;
 }
 
@@ -55,4 +58,31 @@ a:hover, a:focus {
 
 button:hover {
     cursor: pointer;
+}
+
+.fullWidth {
+    margin-left: calc(var(--outer_padding) - var(--outer_padding) - var(--outer_padding) + 10px);
+    margin-right: calc(var(--outer_padding) - var(--outer_padding) - var(--outer_padding) + 10px);
+    padding-left: var(--outer_padding);
+    padding-right: var(--outer_padding);
+}
+
+strong {
+    font-weight: 600;
+}
+
+/*WP Jetpack Share buttons*/
+.sd-title {
+    display: none !important;
+}
+
+.sd-sharing {
+    margin-bottom: 0 !important;
+}
+
+.sharedaddy {
+    border-top: 1px solid var(--very_light_grey);
+    padding-top: 25px;
+    margin-right: -35px;
+    padding-right: 35px;
 }

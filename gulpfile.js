@@ -1,17 +1,20 @@
 const postcss = require('gulp-postcss');
-const { src, dest, series } = require('gulp');
+const rename = require('gulp-rename');
+const { src, dest, series, watch } = require('gulp');
 const transpiler = require('postcss-preset-env');
 const minifier = require('cssnano');
 const combiner = require('postcss-import');
+const browserSync = require('browser-sync').create();
 
 const combineCSS = () => {
     const plugin = [
         combiner()
     ];
     return (
-        src('./stylesheets/style.css')
+        src('./rawStylesheets/style.css')
         .pipe(postcss(plugin))
-        .pipe(dest('./processedStylesheet'))
+        .pipe(rename('1combinedStylesheet.css'))
+        .pipe(dest('./processedStylesheets'))
     )
 }
 
@@ -20,9 +23,10 @@ const minifyCSS = () => {
         minifier()
     ]
     return (
-        src('./processedStylesheet/style.css')
+        src('./processedStylesheets/1combinedStylesheet.css')
         .pipe(postcss(plugin))
-        .pipe(dest('./minifiedStylesheet'))
+        .pipe(rename('2minifiedStylesheet.css'))
+        .pipe(dest('./processedStylesheets'))
     )
 }
 
@@ -31,10 +35,22 @@ const transpileCSS = () => {
         transpiler()
     ]
     return (
-        src('./minifiedStylesheet/style.css')
+        src('./processedStyleSheets/2minifiedStylesheet.css')
         .pipe(postcss(plugin))
-        .pipe(dest('./transpiledStylesheet'))
+        .pipe(rename('3transpiledStylesheet.css'))
+        .pipe(dest('./processedStyleSheets'))
     )
 }
 
-exports.default = series(combineCSS, minifyCSS, transpileCSS);
+const refreshBrowser = () => {
+    browserSync.init({
+        proxy: 'localhost/BCAAC'
+    })
+}
+
+const updateCSS = () => {
+    refreshBrowser();
+    watch('./rawStylesheets/stylesheets/*.css', series(combineCSS, minifyCSS, transpileCSS));
+}
+
+exports.default = updateCSS;

@@ -2,13 +2,13 @@
     display: flex;
     flex-flow: column;
     align-content: center;
-    background-color: var(--light_grey);
+    background-color: var(--white);
     margin: 20px 0;
     border-radius: var(--radius);
 }
 
 #siteHeader h1 {
-    margin: 20px;
+    margin: 18px var(--outer_padding);
     display: flex;
     align-items: center;
 }

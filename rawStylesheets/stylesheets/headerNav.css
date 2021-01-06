@@ -6,7 +6,7 @@
     background-color: var(--very_dark_grey);
     display: flex;
     justify-content: center;
-    padding: 7px 20px;
+    padding: 7px var(--outer_padding);
     border-bottom-right-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
 }
@@ -35,7 +35,7 @@
 
 #siteHeader nav li a {
     display: block;
-    color: var(--light_grey);
+    color: var(--white);
     text-decoration: none;
     font-size: 0.9em;
 }

@@ -7,10 +7,25 @@
             the_post();
             ?>
             <header class='pageHeader'>
-                <h2 class='pageTitle'><?=the_title()?></h2>
-                <span><?=the_date()?></span>
+                <div id='pageHeaderText' class='fullWidth'>
+                    <h2 class='pageTitle'><?=the_title()?></h2>
+                    <span><?=the_date()?></span>
+                </div>
+                <div class='postBanner'>
+                    <div class='postBannerBackground'>
+                        <div class='coverImage'>
+                            <?=get_the_post_thumbnail($ID, 'full');?>
+                        </div>
+                        <div class='bannerImageDescription'>
+                            <p>Pied Bull Yard, Bloomsbury</p>
+                        </div>
+                    </div>
+                </div> 
             </header>
-            <main id='postMain'>
+            <main id='postMain' class='fullWidth'>
+                <aside id='infoSidebar'>
+                    <!--METADATA HERE -->
+                </aside>
                 <article id='postContent'>
                     <?=the_content()?>
                 </article>

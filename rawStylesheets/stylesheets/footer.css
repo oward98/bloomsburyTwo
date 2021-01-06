@@ -1,6 +1,6 @@
 footer {
     background-color:var(--very_dark_grey);
-    color: var(--mid_grey);
+    color: var(--light_grey);
     padding: 20px;
     margin: 20px 0;
     border-radius: var(--radius);
@@ -18,7 +18,7 @@ footer p {
 }
 
 footer a {
-    color: var(--light_grey);
+    color: var(--white);
 }
 
 footer a:hover {

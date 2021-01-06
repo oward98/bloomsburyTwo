@@ -14,13 +14,16 @@ html {
     --light_blue: #6a97a8;
     --dark_blue: #1c617a;
     --turqoise: rgb(3, 44, 39);
-    --light_grey: rgb(252, 255, 252);
-    --mid_grey: #a8a8a8;
-    --dark_grey: rgb(80,80,80);
-    --very_dark_grey: #242424;
+    --white: rgb(255, 255, 254);
+    --very_light_grey: rgb(217, 220, 221);
+    --light_grey: #bdbdbd;
+    --mid_grey: #8f8f8f;
+    --dark_grey: rgb(62, 62, 63);
+    --very_dark_grey: #131613;
     --radius: 2px;
     --font: 'serif';
-    background-color: var(--mid_grey);
+    --outer_padding: 22px;
+    background-color: var(--very_dark_grey);
     font-size: 18px;
 }
 body {
@@ -58,16 +61,38 @@ a:hover, a:focus {
 button:hover {
     cursor: pointer;
 }
+.fullWidth {
+    margin-left: calc(var(--outer_padding) - var(--outer_padding) - var(--outer_padding) + 10px);
+    margin-right: calc(var(--outer_padding) - var(--outer_padding) - var(--outer_padding) + 10px);
+    padding-left: var(--outer_padding);
+    padding-right: var(--outer_padding);
+}
+strong {
+    font-weight: 600;
+}
+/*WP Jetpack Share buttons*/
+.sd-title {
+    display: none !important;
+}
+.sd-sharing {
+    margin-bottom: 0 !important;
+}
+.sharedaddy {
+    border-top: 1px solid var(--very_light_grey);
+    padding-top: 25px;
+    margin-right: -35px;
+    padding-right: 35px;
+}
 #siteHeader {
     display: flex;
     flex-flow: column;
     align-content: center;
-    background-color: var(--light_grey);
+    background-color: var(--white);
     margin: 20px 0;
     border-radius: var(--radius);
 }
 #siteHeader h1 {
-    margin: 20px;
+    margin: 18px var(--outer_padding);
     display: flex;
     align-items: center;
 }
@@ -87,7 +112,7 @@ button:hover {
     background-color: var(--very_dark_grey);
     display: flex;
     justify-content: center;
-    padding: 7px 20px;
+    padding: 7px var(--outer_padding);
     border-bottom-right-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
 }
@@ -111,7 +136,7 @@ button:hover {
 }
 #siteHeader nav li a {
     display: block;
-    color: var(--light_grey);
+    color: var(--white);
     text-decoration: none;
     font-size: 0.9em;
 }
@@ -161,8 +186,8 @@ button:hover {
     }
 }
 main {
-    background-color: var(--light_grey);
-    padding: 20px;
+    background-color: var(--white);
+    padding: var(--outer_padding);
     border-radius: var(--radius);
     min-height: 400px;
     overflow: hidden;
@@ -172,12 +197,14 @@ section {
     padding-bottom: 20px;
 }
 .pageTitle {
-    margin: 0 0 5px 0;
-    font-size: 1.6em;
+    margin: 0px 0 0 0;
+    font-size: 2.1em;
 }
 .pageHeader {
-    border-bottom: solid 1px var(--mid_grey);
     color: var(--very_dark_grey);
+}
+#pageHeaderText {
+    border-bottom: 1px solid var(--mid_grey);
     padding-bottom: 15px;
 }
 .pageHeader p {
@@ -278,15 +305,15 @@ ul.spaced li:last-of-type {
     display: flex;
     flex-flow: column;
 }
-.wp-block-separator {
+hr.wp-block-separator {
     border-top: none !important;
-    border-bottom-style: dotted;
-    border-bottom-width: 0.5px !important;
-    border-bottom-color: var(--mid_grey) !important;
+    border-bottom: 1px solid var(--very_light_grey) !important;
+    margin-right: -36px;
+    margin-left: -8px;
 }
 footer {
     background-color:var(--very_dark_grey);
-    color: var(--mid_grey);
+    color: var(--light_grey);
     padding: 20px;
     margin: 20px 0;
     border-radius: var(--radius);
@@ -301,7 +328,7 @@ footer p {
     font-size: 0.8em;
 }
 footer a {
-    color: var(--light_grey);
+    color: var(--white);
 }
 footer a:hover {
     color: var(--mid_grey);
@@ -524,8 +551,9 @@ body.wp-admin {
 }
 #postsSidebar {
     flex-basis: 100px;
-    flex-grow: 1;
-    margin: 0 20px;
+    flex-grow: 1.2;
+    margin: 0 -20px;
+    padding: 0 20px;
     max-width: 400px;
 }
 #postsSidebar h3 {
@@ -628,29 +656,82 @@ mark.lowSignificance {
 }
 #postContent {
     flex-basis: 300px;
-    flex-grow: 4;
-    margin: 0 20px;
+    flex-grow: 1.8;
+    margin: -20px 30px 0 0;
     overflow: hidden;
-    max-width: 700px;
-    font-size: 1.1em;
+    font-size: 1.25em;
     color: var(--dark_grey);
+    border-right: 1px solid var(--light_grey);
+    padding: 20px 35px;
 }
 #postMain {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -20px;
-    padding: 10px 0;
+    padding-top: 20px;
+    padding-bottom: 0;
+    border-top: 1px solid var(--mid_grey);
+    border-bottom: 1px solid var(--light_grey);
     justify-content: space-between;
 }
 #postContent h2, #postContent h3, #postContent h4 {
-    margin-top: 40px;
+    color: var(--very_dark_grey);
+}
+#postContent h2 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 1.5em
+}
+#postContent h3 {
+    font-size: 1.25em;
+    margin-bottom: 12px;
 }
 #postMain .pageThumbnailContainer {
     height: 150px;
 }
 #postContent p:first-of-type {
-    margin-top: 10px;
+    margin-top: 0;
+}
+#infoSidebar {
+    padding-left: 20px;
+    margin-top: -20px;
+    padding-top: 20px;
+    margin-left: -22px;
+    padding-left: 22px;
+    flex-grow: 0.7;
+    flex-basis: 150px;
+    height: 500px;
 }
 #pageContent {
     max-width: 1000px;
+}
+.coverImage img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.coverImage {
+    width: 100%;
+    height: 500px;
+    padding: 0;
+}
+.bannerImageDescription {
+    background-color: var(--very_dark_grey);
+    padding: 10px 7px;
+    box-sizing: border-box;
+    font-size: 0.9em;
+}
+.bannerImageDescription p {
+    color: var(--light_grey);
+}
+.postBannerBackground {
+    width: 100%;
+    background-color: var(--very_dark_grey);
+    border-radius: 2px;
+    overflow: hidden;
+}
+.postBanner {
+    margin: 5px 0;
+    padding: 20px 0;
+    border-top: 1px solid var(--mid_grey);
+    border-bottom: 1px solid var(--mid_grey);
 }
