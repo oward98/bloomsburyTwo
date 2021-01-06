@@ -61,8 +61,8 @@ button:hover {
 }
 
 .fullWidth {
-    margin-left: calc(var(--outer_padding) - var(--outer_padding) - var(--outer_padding) + 10px);
-    margin-right: calc(var(--outer_padding) - var(--outer_padding) - var(--outer_padding) + 10px);
+    margin-left: calc(var(--outer_padding) - var(--outer_padding) - var(--outer_padding));
+    margin-right: calc(var(--outer_padding) - var(--outer_padding) - var(--outer_padding));
     padding-left: var(--outer_padding);
     padding-right: var(--outer_padding);
 }

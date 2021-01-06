@@ -22,17 +22,20 @@
                     </div>
                 </div> 
             </header>
-            <main id='postMain' class='fullWidth'>
-                <aside id='infoSidebar'>
-                    <!--METADATA HERE -->
-                </aside>
-                <article id='postContent'>
-                    <?=the_content()?>
-                </article>
-                <aside id='postsSidebar'>
-                    <?=require 'latest_posts/latest_posts.php'?>
-                </aside>
-            </main>
+                <main class='fullWidth'>
+                    <div id='postMain'>
+                        <aside id='infoSidebar'>
+                            <!--METADATA HERE -->
+                        </aside>
+                        <article id='postContent'>
+                            <?=the_content()?>
+                        </article>
+                        <aside id='postsSidebar'>
+                            <?=require 'latest_posts/latest_posts.php'?>
+                        </aside>
+                    </div>
+                </main>   
+        </div>
             <?php
         }
     }

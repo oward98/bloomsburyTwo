@@ -42,14 +42,7 @@ const transpileCSS = () => {
     )
 }
 
-const refreshBrowser = () => {
-    browserSync.init({
-        proxy: 'localhost/BCAAC'
-    })
-}
-
 const updateCSS = () => {
-    refreshBrowser();
     watch('./rawStylesheets/stylesheets/*.css', series(combineCSS, minifyCSS, transpileCSS));
 }
 
