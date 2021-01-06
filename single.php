@@ -17,7 +17,13 @@
                             <?=get_the_post_thumbnail($ID, 'full');?>
                         </div>
                         <div class='bannerImageDescription'>
-                            <p>Pied Bull Yard, Bloomsbury</p>
+                            <p>
+                                <?php
+                                    $thumbnail_id = get_post_thumbnail_id($post->ID);
+                                    $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                                    echo $alt;
+                                ?>
+                            </p>
                         </div>
                     </div>
                 </div> 
