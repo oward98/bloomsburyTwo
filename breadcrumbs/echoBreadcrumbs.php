@@ -1,9 +1,10 @@
 <?php
     function echoBreadcrumbs($ancestorIDs) {
+        $ancestorIDsCorrectOrder = array_reverse($ancestorIDs);
         ?>
         <ul id='breadcrumbsList'>
             <?php
-            foreach($ancestorIDs as $ID) {
+            foreach($ancestorIDsCorrectOrder as $ID) {
                 $title = get_the_title($ID);
                 $permalink = get_permalink($ID);
                 ?>
