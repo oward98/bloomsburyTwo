@@ -12,8 +12,9 @@ GitHub Branch: Master
 @import url('./stylesheets/header.css');
 @import url('./stylesheets/headerNav.css');
 @import url('./stylesheets/body.css');
+@import url('./stylesheets/bodyHeader.css');
+@import url('./stylesheets/bodyBanner.css');
 @import url('./stylesheets/footer.css');
-@import url('./stylesheets/footerNav.css');
 @import url('./stylesheets/frontpage.css');
 @import url('./stylesheets/slideshow.css');
 @import url('./stylesheets/newsPage.css');
@@ -23,6 +24,6 @@ GitHub Branch: Master
 @import url('./stylesheets/postsSidebar.css');
 @import url('./stylesheets/mark.css');
 @import url('./stylesheets/subscriptionForm.css');
-@import url('./stylesheets/post.css');
+@import url('./stylesheets/single.css');
 @import url('./stylesheets/page.css');
-@import url('./stylesheets/images.css');
+@import url('./stylesheets/backgroundImage.css');

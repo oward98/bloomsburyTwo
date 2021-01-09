@@ -1,8 +1,8 @@
 <?php get_header() ?>
 
 <main class='newsPage'>
-    <header class='pageHeader'>
-        <h2 class='pageTitle'>News</h2>
+    <header class='bodyHeader'>
+        <h2 class='bodyTitle'>News</h2>
     </header>
     <section id='newsPosts' class='pageBanner'>
     <?php

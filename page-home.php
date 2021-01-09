@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<main>
+<main id='homepageMain'>
     <section id='featured'>
         <?php require 'homepage_slideshow/slideshow.php'; ?>
     </section>

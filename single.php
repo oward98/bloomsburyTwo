@@ -6,42 +6,39 @@
         while (have_posts()) {
             the_post();
             ?>
-            <header class='pageHeader'>
-                <div id='pageHeaderText' class='fullWidth'>
-                    <h2 class='pageTitle'><?=the_title()?></h2>
-                    <span><?=the_date()?></span>
-                </div>
-                <div class='postBanner'>
-                    <div class='postBannerBackground'>
-                        <div class='coverImage'>
-                            <?=get_the_post_thumbnail($ID, 'full');?>
-                        </div>
-                        <div class='bannerImageDescription'>
-                            <p>
-                                <?php
-                                    $thumbnail_id = get_post_thumbnail_id($post->ID);
-                                    $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
-                                    echo $alt;
-                                ?>
-                            </p>
-                        </div>
-                    </div>
-                </div> 
+            <header class='bodyHeader'>
+                <h2 class='bodyTitle'><?=the_title()?></h2>
+                <span><?=the_date()?></span>
             </header>
-                <main class='fullWidth'>
-                    <div id='postMain'>
-                        <aside id='infoSidebar'>
-                            <!--METADATA HERE -->
-                        </aside>
-                        <article id='postContent'>
-                            <?=the_content()?>
-                        </article>
-                        <aside id='postsSidebar'>
-                            <?=require 'latest_posts/latest_posts.php'?>
-                        </aside>
+            <section class='bodyBanner'>
+                <div class='bodyBannerBackground'>
+                    <div class='bodyBannerImage'>
+                        <?=get_the_post_thumbnail($ID, 'full');?>
                     </div>
-                </main>   
-        </div>
+                    <div class='bodyBannerDescription'>
+                        <p>
+                            <?php
+                                $thumbnail_id = get_post_thumbnail_id($post->ID);
+                                $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                                echo $alt;
+                            ?>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class='fullWidth'>
+                <div id='postMain'>
+                    <aside id='infoSidebar'>
+                        <!--METADATA HERE -->
+                    </aside>
+                    <article id='postContent'>
+                        <?=the_content()?>
+                    </article>
+                    <aside id='postsSidebar'>
+                        <?=require 'latest_posts/latest_posts.php'?>
+                    </aside>
+                </div>
+            </section>
             <?php
         }
     }

@@ -44,6 +44,7 @@ const transpileCSS = () => {
 
 const updateCSS = () => {
     watch('./rawStylesheets/stylesheets/*.css', series(combineCSS, minifyCSS, transpileCSS));
+    watch('./rawStylesheets/style.css', series(combineCSS, minifyCSS, transpileCSS));
 }
 
 exports.default = updateCSS;
