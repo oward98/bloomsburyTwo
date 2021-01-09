@@ -10,7 +10,7 @@ function return_latest_posts_html() {
         $excerpt = $post->post_excerpt;
         $permalink = get_permalink($ID);
 
-        $thumbnail = get_the_post_thumbnail($ID, 'medium');
+        $thumbnail = get_the_post_thumbnail($ID, 'large');
 
         ?>
         <a href=<?=$permalink?> class='pagePreview'>
