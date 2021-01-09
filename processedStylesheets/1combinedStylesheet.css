@@ -728,7 +728,7 @@ main.fullWidth {
     flex: 0 0 100px;
 }
 #pageContent {
-    max-width: 1000px;
+    border-top: 1px solid var(--mid_grey)
 }
 #backgroundImageDiv {
     z-index: -10;
@@ -745,14 +745,17 @@ main.fullWidth {
 }
 #breadcrumbsList {
     list-style-type: none;
-    padding-left: 0;
-    border-bottom: 1px solid var(--light_grey);
-    padding: 8px 0 10px 0;
-    margin: 0 0 15px 0;
+    border-top: 1px solid var(--mid_grey);
+    margin-top: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid var(--mid_grey);
 }
 #breadcrumbsList li {
     display: inline;
     margin-right: 10px;
+    font-size: 1.1em;
 }
 #breadcrumbsList li::after {
     content: "\203A";

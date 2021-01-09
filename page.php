@@ -26,8 +26,10 @@
                     </div>
                 </div>
             </section>
-            <article id='pageContent'>
+            <nav>
                 <?php require 'breadcrumbs/echoBreadcrumbs.php'?>
+            </nav>
+            <article id='pageContent'>
                 <?=the_content()?>
             </article>
             <?php
