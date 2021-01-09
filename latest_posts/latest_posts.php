@@ -1,7 +1,7 @@
 <?php
 
 function return_latest_posts_html() {
-    $latest_posts = get_posts(array('numberposts' => 4));
+    $latest_posts = get_posts(array('numberposts' => 6));
     foreach($latest_posts as $post) {
         $ID = $post->ID;
 

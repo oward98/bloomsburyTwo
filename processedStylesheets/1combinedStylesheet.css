@@ -286,7 +286,7 @@ hr.wp-block-separator {
 }
 .bodyTitle {
     margin: 0px 0 0 0;
-    font-size: 2.1em;
+    font-size: 2em;
 }
 .bodyHeader {
     color: var(--very_dark_grey);
@@ -586,6 +586,10 @@ body.wp-admin {
 }
 #postsSidebar span {
     font-size: 0.8em;
+}
+/*removes inexplicable '1' after posts*/
+#postsSidebar {
+    color: var(--white);
 }
 mark.highThreat {
     color: rgb(168, 13, 13);

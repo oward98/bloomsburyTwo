@@ -21,3 +21,8 @@
 #postsSidebar span {
     font-size: 0.8em;
 }
+
+/*removes inexplicable '1' after posts*/
+#postsSidebar {
+    color: var(--white);
+}
