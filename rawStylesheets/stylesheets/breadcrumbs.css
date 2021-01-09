@@ -1,0 +1,21 @@
+#breadcrumbsList {
+    list-style-type: none;
+    padding-left: 0;
+    border-bottom: 1px solid var(--light_grey);
+    padding: 8px 0 10px 0;
+    margin: 0 0 15px 0;
+}
+
+#breadcrumbsList li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#breadcrumbsList li::after {
+    content: "\203A";
+    margin-left: 10px;
+}
+
+#breadcrumbsList li:last-child:after {
+    content: "";
+}

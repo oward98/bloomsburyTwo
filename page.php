@@ -27,6 +27,7 @@
                 </div>
             </section>
             <article id='pageContent'>
+                <?php require 'breadcrumbs/echoBreadcrumbs.php'?>
                 <?=the_content()?>
             </article>
             <?php
