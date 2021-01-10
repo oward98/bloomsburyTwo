@@ -5,6 +5,7 @@
     if (have_posts()) {
         while (have_posts()) {
             the_post();
+            $pageID = get_the_id();
             ?>
             <header class='bodyHeader'>
                 <h2 class='bodyTitle'><?=the_title()?></h2>
@@ -29,10 +30,17 @@
             <nav>
                 <?php require 'breadcrumbs/echoBreadcrumbs.php'?>
             </nav>
-            <article id='pageContent'>
-                <?=the_content()?>
-            </article>
-            <?php
+            <section id='pageMain'>
+                <div class='gutterFlex'>
+                    <aside id='navSidebar'>
+                            <?php require 'navSidebar/navSidebar.php' ?>
+                        </aside>
+                    <article id='pageContent'>
+                        <?=get_post_field('post_content', $pageID); ?>
+                    </article> 
+                </div>
+            </section>
+        <?php
         }
     }
     ?>

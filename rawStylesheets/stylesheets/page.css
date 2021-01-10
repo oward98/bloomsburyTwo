@@ -1,3 +1,14 @@
+#pageMain {
+    border-top: 1px solid var(--mid_grey);
+}
+
 #pageContent {
-    border-top: 1px solid var(--mid_grey)
+    margin-top: var(--outer_padding);
+    display: inline-block;
+    flex-grow: 10;
+    flex-basis: 400px;
+}
+
+#pageContent > *:nth-child(1) {
+    margin-top: 0;
 }

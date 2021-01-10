@@ -13,7 +13,7 @@ html {
     --radius: 2px;
     --font: 'serif';
     --outer_padding: 22px;
-    background-color: var(--very_dark_grey);
+    background-color: var(--dark_grey);
     font-size: 18px;
 }
 

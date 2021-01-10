@@ -28,6 +28,8 @@ footer a:hover {
 #about {
     padding-top: 0;
     font-weight: 300;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--dark_grey);
 }
 
 ul#footerCommitteeLinks {
