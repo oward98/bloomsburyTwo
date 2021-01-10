@@ -7,8 +7,14 @@
     display: inline-block;
     flex-grow: 10;
     flex-basis: 400px;
+    font-size: 1.15em;
+    color: var(--dark_grey);
 }
 
 #pageContent > *:nth-child(1) {
     margin-top: 0;
+}
+
+#pageMain #postsSidebar {
+    flex-basis: 200px;
 }

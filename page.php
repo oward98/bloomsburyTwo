@@ -37,7 +37,10 @@
                         </aside>
                     <article id='pageContent'>
                         <?=get_post_field('post_content', $pageID); ?>
-                    </article> 
+                    </article>
+                    <aside id='postsSidebar'>
+                        <?=require 'latest_posts/latest_posts.php'?>
+                    </aside>
                 </div>
             </section>
         <?php
