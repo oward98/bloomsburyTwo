@@ -101,9 +101,9 @@ strong {
     display: flex;
     align-items: center;
 }
-#siteHeader h1 a img {
-    max-width: 100%;
+.custom-logo {
     height: auto;
+    max-width: 400px;
 }
 .menu-main-container {
     position: relative;

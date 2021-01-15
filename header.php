@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-gb">
     <head>
-        <title><?php bloginfo("name") | wp_title(); ?></title>
+        <title><?php wp_title('|', true, 'right'); bloginfo("name") ?></title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <meta name="description" content="<?=wp_strip_all_tags(get_the_excerpt(), true)?>">
