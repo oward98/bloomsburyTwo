@@ -11,6 +11,7 @@
     margin: 18px var(--outer_padding);
     display: flex;
     align-items: center;
+    max-width: 350px;
 }
 
 #siteHeader h1 a {
