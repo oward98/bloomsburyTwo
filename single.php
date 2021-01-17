@@ -29,7 +29,7 @@
             <section class='fullWidth'>
                 <div id='postMain'>
                     <aside id='infoSidebar'>
-                        <!--METADATA HERE -->
+                        <?php require 'infoSidebar/infoSidebar.php' ?>
                     </aside>
                     <article id='postContent'>
                         <?=the_content()?>

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-
 html {
     --light_blue: #6a97a8;
     --dark_blue: #1c617a;
@@ -85,4 +83,10 @@ strong {
     padding-top: 25px;
     margin-right: -35px;
     padding-right: 35px;
+}
+
+@media only screen and (max-width: 380px) {
+    html {
+        --outer_padding: 12px; 
+    }
 }

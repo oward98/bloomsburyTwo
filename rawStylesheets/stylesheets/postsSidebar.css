@@ -1,7 +1,7 @@
 #postsSidebar {
-    flex-basis: 100px;
-    flex-grow: 1.2;
-    margin: 0 22px;
+    flex-basis: 120px;
+    flex-grow: 1.4;
+    margin: 0 var(--outer_padding);
 }
 
 #postsSidebar h3 {

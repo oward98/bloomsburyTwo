@@ -1,7 +1,6 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 /*
 Theme Name: Bloomsbury
 Author: Owen Ward
@@ -83,6 +82,11 @@ strong {
     margin-right: -35px;
     padding-right: 35px;
 }
+@media only screen and (max-width: 380px) {
+    html {
+        --outer_padding: 12px; 
+    }
+}
 #siteHeader {
     display: flex;
     flex-flow: column;
@@ -103,7 +107,7 @@ strong {
 }
 .custom-logo {
     height: auto;
-    max-width: 400px;
+    width: 100%
 }
 .menu-main-container {
     position: relative;
@@ -213,7 +217,7 @@ figcaption {
 }
 /*overriding gutenberg defaults*/
 .wp-block-image {
-    margin: 10px 0;
+    margin: 1em 0;
 }
 .wp-block-image figcaption {
     margin: 5px 0 !important;
@@ -305,6 +309,14 @@ hr.wp-block-separator {
 .bodyHeader p {
     margin: 0;
     color: var(--mid_grey);
+}
+@media only screen and (max-width: 380px) {
+    .bodyHeader {
+        margin: 5px;
+    }
+    .bodyTitle {
+        margin-bottom: 10px;
+    }
 }
 .bodyBanner {
     margin: 5px 0;
@@ -580,9 +592,9 @@ body.wp-admin {
     font-size: 0.9em;
 }
 #postsSidebar {
-    flex-basis: 100px;
-    flex-grow: 1.2;
-    margin: 0 22px;
+    flex-basis: 120px;
+    flex-grow: 1.4;
+    margin: 0 var(--outer_padding);
 }
 #postsSidebar h3 {
     margin: 12px 0 0 0;
@@ -699,8 +711,8 @@ mark.lowSignificance {
     margin-right: var(--negative-gutter-width);
 }
 #postContent {
-    flex-basis: 300px;
-    flex-grow: 1.8;
+    flex-basis: 500px;
+    flex-grow: 1.2;
     margin: -20px var(--gutter-width) 0 var(--gutter-width);
     overflow: hidden;
     font-size: 1.25em;
@@ -741,6 +753,45 @@ main.fullWidth {
 #postContent hr.wp-block-separator {
     margin-right: -36px;
     margin-left: -8px;
+}
+@media only screen and (max-width: 960px) {
+    #postContent {
+        flex-basis: 800px;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    #postContent p {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1em;
+    }
+
+    #postContent h1, #postContent h2, #postContent h3, #postContent h4, #postContent h5, #postContent h6 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #postContent h2 {
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #postContent p {
+        font-size: 0.95em;
+    }
+}
+@media only screen and (max-width: 620px) {
+    #postContent p {
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 0.9em;
+    }
+
+    #postContent h1, #postContent h2, #postContent h3, #postContent h4, #postContent h5, #postContent h6 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 #pageMain {
     border-top: 1px solid var(--mid_grey);
@@ -832,6 +883,7 @@ main.fullWidth {
 }
 #navSidebar > ul {
     margin-top: 0;
+    margin-bottom: 0;
 }
 #navSidebar > ul > li {
     border-bottom: 1px solid var(--light_grey);
@@ -853,4 +905,48 @@ main.fullWidth {
 }
 #navSidebar ul ul {
     margin-left: 15px;
+}
+#infoSidebar {
+    color: var(--dark_grey);
+    flex-basis: auto;
+    flex-grow: 0.5;
+}
+#infoSidebar li {
+    list-style-type: none;
+}
+#infoSidebar > ul {
+    border-right: 1px solid var(--light_grey);
+    padding-left: 5px;
+    margin-left: 0;
+    margin-bottom: -100px;
+    margin-top: -20px;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+#infoSidebar > ul > li {
+    border-top: 1px solid var(--very_light_grey);
+    padding: 7px 10px;
+    margin: 0 -10px;
+}
+#infoSidebar > ul > li:last-of-type {
+    border-bottom: 1px solid var(--very_light_grey);
+}
+#infoSidebar h1 {
+    font-size: 1em;
+}
+#infoSidebar ul ul {
+    padding-left: 10px;
+    font-size: 0.9em;
+}
+#infoSidebar ul ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#infoSidebar h1 {
+    margin: 0;
+}
+@media only screen and (max-width: 960px) {
+    #infoSidebar {
+        display: none;
+    }
 }

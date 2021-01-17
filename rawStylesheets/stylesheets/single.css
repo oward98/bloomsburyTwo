@@ -12,8 +12,8 @@
 }
 
 #postContent {
-    flex-basis: 300px;
-    flex-grow: 1.8;
+    flex-basis: 500px;
+    flex-grow: 1.2;
     margin: -20px var(--gutter-width) 0 var(--gutter-width);
     overflow: hidden;
     font-size: 1.25em;
@@ -62,4 +62,46 @@ main.fullWidth {
 #postContent hr.wp-block-separator {
     margin-right: -36px;
     margin-left: -8px;
+}
+
+@media only screen and (max-width: 960px) {
+    #postContent {
+        flex-basis: 800px;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    #postContent p {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1em;
+    }
+
+    #postContent h1, #postContent h2, #postContent h3, #postContent h4, #postContent h5, #postContent h6 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #postContent h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #postContent p {
+        font-size: 0.95em;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #postContent p {
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 0.9em;
+    }
+
+    #postContent h1, #postContent h2, #postContent h3, #postContent h4, #postContent h5, #postContent h6 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
