@@ -25,7 +25,18 @@ function addClickFunctionality() {
     menuButton.onclick = toggleMenu;
 }
 
+function keepCheckOnWindowSize() {
+    window.onresize = function() {
+        if (window.innerWidth > 850) {
+            showMenu();
+        } else {
+            hideMenu()
+        }
+    }
+}
+
 addClickFunctionality();
+keepCheckOnWindowSize();
 function startSlideshow() {
     var slideIndex = -1;
 
