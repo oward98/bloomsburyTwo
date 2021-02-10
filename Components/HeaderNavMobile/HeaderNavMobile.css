@@ -6,14 +6,4 @@
     #mobileMenu {
         display: block;
     }
-
-    #mobileMenuButton {
-        height: 60px;
-        width: 60px;
-        font-size: 20px;
-        border: 1px solid var(--dark_grey);
-        color: var(--dark_grey);
-        background-color: white;
-        border-radius: 4px;
-    }
 }

@@ -8,11 +8,13 @@ function SiteHeader() {
 ?>
 <header id='siteHeader'>
     <div id='topBar'>
-    <h1>
-        <?= get_custom_logo(); ?>
-    </h1>
-    <?=HeaderNavMobile()?>
-    <?=SubscribeWidget()?>
+        <h1>
+            <?= get_custom_logo(); ?>
+        </h1>
+        <div id='headerButtons'>
+            <?php SubscribeWidget() ?>
+            <?=HeaderNavMobile()?>
+        </div>
     </div>
     <?=HeaderNav()?>
 </header>

@@ -3,7 +3,7 @@
 function HeaderNavMobile() {
     ?>
     <div id='mobileMenu'>
-        <button id='mobileMenuButton'>&#9776;</button>
+        <button id='mobileMenuButton' class='headerButton'>&#9776;</button>
         <div id='mobileMenuContent'>
             <?= wp_nav_menu(array('menu' => 'main', )) ?>
         </div>
