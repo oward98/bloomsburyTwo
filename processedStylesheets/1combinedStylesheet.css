@@ -714,6 +714,25 @@ ul#footerCommitteeLinks {
         border-bottom: none;
     }
 }
+@media only screen and (max-width: 760px) {
+    #headerNav {
+        display: none;
+    }
+
+    #mobileMenu {
+        display: block;
+    }
+
+    #mobileMenuButton {
+        height: 60px;
+        width: 60px;
+        font-size: 20px;
+        border: 1px solid var(--dark_grey);
+        color: var(--dark_grey);
+        background-color: white;
+        border-radius: 4px;
+    }
+}
 #bloomsbury, #map {
     flex-basis: 100%;
 }
@@ -766,25 +785,6 @@ ul#footerCommitteeLinks {
 @media only screen and (max-width: 960px) {
     #infoSidebar {
         display: none;
-    }
-}
-@media only screen and (max-width: 680px) {
-    #headerNav {
-        display: none;
-    }
-
-    #mobileMenu {
-        display: block;
-    }
-
-    #mobileMenuButton {
-        height: 60px;
-        width: 60px;
-        font-size: 20px;
-        border: 1px solid var(--dark_grey);
-        color: var(--dark_grey);
-        background-color: white;
-        border-radius: 4px;
     }
 }
 .pageBanner {
