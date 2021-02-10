@@ -2,6 +2,7 @@
 
 require get_template_directory() . '/Components/HeaderNav/HeaderNav.php';
 require get_template_directory() . '/Components/HeaderNavMobile/HeaderNavMobile.php';
+require get_template_directory() . '/Components/SubscribeWidget/SubscribeWidget.php';
 
 function SiteHeader() {
 ?>
@@ -11,11 +12,7 @@ function SiteHeader() {
         <?= get_custom_logo(); ?>
     </h1>
     <?=HeaderNavMobile()?>
-    <?php
-    if ( is_active_sidebar( 'header-widget' ) ) {
-        dynamic_sidebar( 'header-widget' );
-    }
-    ?>
+    <?=SubscribeWidget()?>
     </div>
     <?=HeaderNav()?>
 </header>
