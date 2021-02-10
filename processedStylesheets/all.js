@@ -24,20 +24,23 @@ function addClickFunctionality() {
     }
     menuButton.onclick = toggleMenu;
 }
-/*
+
 function keepCheckOnWindowSize() {
+    var windowWidth = window.innerWidth;
     window.onresize = function() {
+        if (window.innerWidth === windowWidth) return;
         if (window.innerWidth > 850) {
             showMenu();
+            windowWidth = window.innerWidth;
         } else {
             hideMenu()
+            windowWidth = window.innerWidth;
         }
     }
 }
 
 
 keepCheckOnWindowSize();
-*/
 addClickFunctionality();
 function startSlideshow() {
     var slideIndex = -1;

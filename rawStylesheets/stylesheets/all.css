@@ -160,6 +160,96 @@ ul#footerCommitteeLinks {
         margin-left: 6px;
     }
 }
+.bodyTitle {
+    margin: 0px 0 0 0;
+    font-size: 2em;
+}
+
+.bodyHeader {
+    color: var(--very_dark_grey);
+    border-bottom: 1px solid var(--mid_grey);
+    padding-bottom: 15px;
+}
+
+.bodyHeader p {
+    margin: 0;
+    color: var(--mid_grey);
+}
+
+@media only screen and (max-width: 380px) {
+    .bodyHeader {
+        margin: 5px;
+    }
+    .bodyTitle {
+        margin-bottom: 10px;
+    }
+}
+#infoSidebar {
+    color: var(--dark_grey);
+    flex-basis: auto;
+    flex-grow: 0.5;
+}
+
+#infoSidebar li {
+    list-style-type: none;
+}
+
+#infoSidebar > ul {
+    border-right: 1px solid var(--light_grey);
+    padding-left: 5px;
+    margin-left: 0;
+    margin-bottom: -100px;
+    margin-top: -20px;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+
+#infoSidebar > ul > li {
+    border-top: 1px solid var(--very_light_grey);
+    padding: 7px 10px;
+    margin: 0 -10px;
+}
+
+#infoSidebar > ul > li:last-of-type {
+    border-bottom: 1px solid var(--very_light_grey);
+}
+
+#infoSidebar h1 {
+    font-size: 1em;
+}
+
+#infoSidebar ul ul {
+    padding-left: 10px;
+    font-size: 0.9em;
+}
+
+#infoSidebar ul ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#infoSidebar h1 {
+    margin: 0;
+}
+
+@media only screen and (max-width: 960px) {
+    #infoSidebar {
+        display: none;
+    }
+}
+#bloomsbury, #map {
+    flex-basis: 100%;
+}
+
+#bloomsbury .pageThumbnailContainer, #map .pageThumbnailContainer {
+    height: 300px;
+}
+
+#clientSection {
+    border-bottom: none;
+    padding: 0;
+}
+
 /*visibility*/
 
 #mobileMenu {
@@ -273,29 +363,33 @@ ul#footerCommitteeLinks {
         border-bottom: none;
     }
 }
-.bodyTitle {
-    margin: 0px 0 0 0;
-    font-size: 2em;
+#postsSidebar {
+    flex-basis: 120px;
+    flex-grow: 1.4;
+    margin: 0 var(--outer_padding);
 }
 
-.bodyHeader {
-    color: var(--very_dark_grey);
-    border-bottom: 1px solid var(--mid_grey);
-    padding-bottom: 15px;
+#postsSidebar h3 {
+    margin: 12px 0 0 0;
+    font-size: 1em;
 }
 
-.bodyHeader p {
-    margin: 0;
-    color: var(--mid_grey);
+#postsSidebar a {
+    margin-left: 0;
+    margin-right: 0;
 }
 
-@media only screen and (max-width: 380px) {
-    .bodyHeader {
-        margin: 5px;
-    }
-    .bodyTitle {
-        margin-bottom: 10px;
-    }
+#postsSidebar summary {
+    margin-bottom: 10px;
+}
+
+#postsSidebar span {
+    font-size: 0.8em;
+}
+
+/*removes inexplicable '1' after posts*/
+#postsSidebar {
+    color: var(--white);
 }
 @media only screen and (max-width: 850px) {
     #headerNav {
@@ -304,72 +398,6 @@ ul#footerCommitteeLinks {
 
     #mobileMenu {
         display: block;
-    }
-}
-#bloomsbury, #map {
-    flex-basis: 100%;
-}
-
-#bloomsbury .pageThumbnailContainer, #map .pageThumbnailContainer {
-    height: 300px;
-}
-
-#clientSection {
-    border-bottom: none;
-    padding: 0;
-}
-
-#infoSidebar {
-    color: var(--dark_grey);
-    flex-basis: auto;
-    flex-grow: 0.5;
-}
-
-#infoSidebar li {
-    list-style-type: none;
-}
-
-#infoSidebar > ul {
-    border-right: 1px solid var(--light_grey);
-    padding-left: 5px;
-    margin-left: 0;
-    margin-bottom: -100px;
-    margin-top: -20px;
-    padding-bottom: 100px;
-    padding-top: 20px;
-}
-
-#infoSidebar > ul > li {
-    border-top: 1px solid var(--very_light_grey);
-    padding: 7px 10px;
-    margin: 0 -10px;
-}
-
-#infoSidebar > ul > li:last-of-type {
-    border-bottom: 1px solid var(--very_light_grey);
-}
-
-#infoSidebar h1 {
-    font-size: 1em;
-}
-
-#infoSidebar ul ul {
-    padding-left: 10px;
-    font-size: 0.9em;
-}
-
-#infoSidebar ul ul li {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-#infoSidebar h1 {
-    margin: 0;
-}
-
-@media only screen and (max-width: 960px) {
-    #infoSidebar {
-        display: none;
     }
 }
 #navSidebar {
@@ -426,34 +454,6 @@ ul#footerCommitteeLinks {
 
 #navSidebar ul ul {
     margin-left: 15px;
-}
-#postsSidebar {
-    flex-basis: 120px;
-    flex-grow: 1.4;
-    margin: 0 var(--outer_padding);
-}
-
-#postsSidebar h3 {
-    margin: 12px 0 0 0;
-    font-size: 1em;
-}
-
-#postsSidebar a {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#postsSidebar summary {
-    margin-bottom: 10px;
-}
-
-#postsSidebar span {
-    font-size: 0.8em;
-}
-
-/*removes inexplicable '1' after posts*/
-#postsSidebar {
-    color: var(--white);
 }
 .pageBanner {
     display: flex;
