@@ -9,24 +9,16 @@ GitHub Branch: Master
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('./stylesheets/global.css');
-@import url('./stylesheets/header.css');
-@import url('./stylesheets/headerNav.css');
 @import url('./stylesheets/body.css');
-@import url('./stylesheets/bodyHeader.css');
 @import url('./stylesheets/bodyBanner.css');
-@import url('./stylesheets/footer.css');
-@import url('./stylesheets/frontpage.css');
-@import url('./stylesheets/slideshow.css');
 @import url('./stylesheets/newsPage.css');
 @import url('./stylesheets/admin.css');
 @import url('./stylesheets/screenReaders.css');
 @import url('./stylesheets/conservationAreaCards.css');
-@import url('./stylesheets/postsSidebar.css');
 @import url('./stylesheets/mark.css');
 @import url('./stylesheets/subscriptionForm.css');
 @import url('./stylesheets/single.css');
 @import url('./stylesheets/page.css');
 @import url('./stylesheets/backgroundImage.css');
-@import url('./stylesheets/breadcrumbs.css');
-@import url('./stylesheets/navSidebar.css');
-@import url('./stylesheets/infoSidebar.css');
+
+@import url('./stylesheets/all.css');

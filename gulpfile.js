@@ -4,7 +4,23 @@ const { src, dest, series, watch } = require('gulp');
 const transpiler = require('postcss-preset-env');
 const minifier = require('cssnano');
 const combiner = require('postcss-import');
-const browserSync = require('browser-sync').create();
+const concat = require('gulp-concat');
+
+const concatCSS = () => {
+    return (
+        src('Components/**/*.css')
+        .pipe(concat('all.css'))
+        .pipe(dest('./rawStylesheets/stylesheets'))
+    );
+}
+
+const concatJS = () => {
+    return (
+        src('Components/**/*.js')
+        .pipe(concat('all.js'))
+        .pipe(dest('./processedStylesheets'))
+    );
+}
 
 const combineCSS = () => {
     const plugin = [
@@ -45,6 +61,7 @@ const transpileCSS = () => {
 const updateCSS = () => {
     watch('./rawStylesheets/stylesheets/*.css', series(combineCSS, minifyCSS, transpileCSS));
     watch('./rawStylesheets/style.css', series(combineCSS, minifyCSS, transpileCSS));
+    watch('./Components/**/*', series(concatCSS, concatJS));
 }
 
 exports.default = updateCSS;

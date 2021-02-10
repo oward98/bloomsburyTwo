@@ -40,4 +40,3 @@ function getTopAncestorID($page) {
         return $topAncestorID;
     }
 }
-

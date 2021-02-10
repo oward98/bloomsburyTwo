@@ -1,4 +1,13 @@
-<?php get_header() ?>
+<?php 
+
+require get_template_directory() . '/Components/PostsSidebar/PostsSidebar.php';
+require get_template_directory() . '/Components/Breadcrumbs/Breadcrumbs.php';
+require get_template_directory() . '/Components/NavSidebar/NavSidebar.php';
+require get_template_directory() . '/Components/BodyHeader/BodyHeader.php';
+
+get_header() 
+
+?>
 
 <main>
     <?php
@@ -7,10 +16,7 @@
             the_post();
             $pageID = get_the_id();
             ?>
-            <header class='bodyHeader'>
-                <h2 class='bodyTitle'><?=the_title()?></h2>
-                <?=the_excerpt()?>
-            </header>
+            <?= BodyHeader() ?>
             <section class='bodyBanner'>
                 <div class='bodyBannerBackground'>
                     <div class='bodyBannerImage'>
@@ -28,19 +34,17 @@
                 </div>
             </section>
             <nav>
-                <?php require 'breadcrumbs/echoBreadcrumbs.php'?>
+                <?= Breadcrumbs() ?>
             </nav>
             <section id='pageMain'>
                 <div class='gutterFlex'>
                     <aside id='navSidebar'>
-                            <?php require 'navSidebar/navSidebar.php' ?>
+                            <?= NavSidebar() ?>
                         </aside>
                     <article id='pageContent'>
                         <?=get_post_field('post_content', $pageID); ?>
                     </article>
-                    <aside id='postsSidebar'>
-                        <?=require 'latest_posts/latest_posts.php'?>
-                    </aside>
+                    <?=PostsSidebar(6)?>
                 </div>
             </section>
         <?php

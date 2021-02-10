@@ -1,4 +1,12 @@
-<?php get_header() ?>
+<?php 
+
+require get_template_directory() . '/Components/PostsSidebar/PostsSidebar.php';
+require get_template_directory() . '/Components/InfoSidebar/InfoSidebar.php';
+require get_template_directory() . '/Components/BodyHeader/BodyHeader.php';
+
+get_header() 
+
+?>
 
 <main>
     <?php
@@ -6,10 +14,7 @@
         while (have_posts()) {
             the_post();
             ?>
-            <header class='bodyHeader'>
-                <h2 class='bodyTitle'><?=the_title()?></h2>
-                <span><?=the_date()?></span>
-            </header>
+            <?= BodyHeader() ?>
             <section class='bodyBanner'>
                 <div class='bodyBannerBackground'>
                     <div class='bodyBannerImage'>
@@ -29,14 +34,12 @@
             <section class='fullWidth'>
                 <div id='postMain'>
                     <aside id='infoSidebar'>
-                        <?php require 'infoSidebar/infoSidebar.php' ?>
+                        <?= InfoSidebar() ?>
                     </aside>
                     <article id='postContent'>
                         <?=the_content()?>
                     </article>
-                    <aside id='postsSidebar'>
-                        <?=require 'latest_posts/latest_posts.php'?>
-                    </aside>
+                    <?= PostsSidebar(6) ?>
                 </div>
             </section>
             <?php

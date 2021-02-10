@@ -56,8 +56,10 @@ function setup_slideshow() {
 };
 
 function add_slideshow_javascript() {
-    wp_enqueue_script('slideshow', get_template_directory_uri() . '/js/slideshow.js');
+    wp_enqueue_script('slideshow', get_template_directory_uri() . '/Components/Slideshow/Slideshow.js');
 }
 
-setup_slideshow();
-add_slideshow_javascript();
+function SlideShow() {
+    setup_slideshow();
+    add_slideshow_javascript(); 
+}
