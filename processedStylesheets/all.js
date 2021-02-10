@@ -24,7 +24,7 @@ function addClickFunctionality() {
     }
     menuButton.onclick = toggleMenu;
 }
-
+/*
 function keepCheckOnWindowSize() {
     window.onresize = function() {
         if (window.innerWidth > 850) {
@@ -35,8 +35,10 @@ function keepCheckOnWindowSize() {
     }
 }
 
-addClickFunctionality();
+
 keepCheckOnWindowSize();
+*/
+addClickFunctionality();
 function startSlideshow() {
     var slideIndex = -1;
 
