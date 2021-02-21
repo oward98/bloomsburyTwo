@@ -39,6 +39,5 @@ function keepCheckOnWindowSize() {
     }
 }
 
-
 keepCheckOnWindowSize();
 addClickFunctionality();
