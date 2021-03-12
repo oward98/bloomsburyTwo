@@ -39,29 +39,9 @@
     display: none;
 }
 
-.headerButton {
-    height: 65px;
-    width: 65px;
-    font-size: 20px;
-    border: 1px solid var(--dark_grey);
-    color: var(--dark_grey);
-    background-color: white;
-    border-radius: 4px;
-    display: inline-block;
-}
-
-.headerButton:first-of-type {
-    margin-right: 8px;
-}
-
-#headerButtons {
-    display: inline-flex;
-    align-items: center;
-}
-
 @media only screen and (max-width: 500px) {
     #siteHeader h1 {
-        width: 80px;
+        width: 70px;
         overflow: hidden;
     }
 }

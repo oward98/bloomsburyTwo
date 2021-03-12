@@ -18,13 +18,45 @@ function get_slideshow_elements() {
     return $slideshow_array;
 };
 
+function insert_slideshow_images() {
+    $slideshow_array = get_slideshow_elements();
+
+    foreach($slideshow_array as $slideshow_element) {
+        $ID = $slideshow_element->ID;
+        ?>
+            <div class='slide'>
+            <a href=<?=get_permalink($ID)?>>
+                <div class='imageContainer'>
+                    <?=get_the_post_thumbnail($ID, 'full')?>
+                </div>
+            </a>
+        </div>
+        <?php
+    };
+}
+
+function insert_slideshow_caption() {
+    $slideshow_array = get_slideshow_elements();
+
+    foreach($slideshow_array as $slideshow_element) {
+        $ID = $slideshow_element->ID;
+        ?>
+            <div class='slide'>
+            <div class='slideshowCaption'>
+                <?=get_post_meta($ID, 'slideshow_text', true)?>
+            </div>
+        </div>
+        <?php
+    };
+}
+
 function insert_slideshow_html() {
     $slideshow_array = get_slideshow_elements();
 
     foreach($slideshow_array as $slideshow_element) {
         $ID = $slideshow_element->ID;
         ?>
-        <div class='slide'>
+            <div class='slide'>
             <a href=<?=get_permalink($ID)?>>
                 <div class='imageContainer'>
                     <?=get_the_post_thumbnail($ID, 'full')?>
@@ -34,14 +66,14 @@ function insert_slideshow_html() {
                 <?=get_post_meta($ID, 'slideshow_text', true)?>
             </div>
         </div>
-    <?php
+        <?php
     };
 };
 
 function setup_slideshow() {
     ?>
     <div id='mainSlideshow'>
-        <?php insert_slideshow_html(); ?>
+        <?php insert_slideshow_caption(); ?>
         <!--
         <div id='slideshowButtons'>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -50,7 +82,7 @@ function setup_slideshow() {
         -->
     </div>
     <div id='backgroundSlideshow'>
-        <?php insert_slideshow_html(); ?>
+        <?php insert_slideshow_images(); ?>
     </div>
     <?php
 };

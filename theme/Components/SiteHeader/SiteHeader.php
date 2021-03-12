@@ -5,20 +5,20 @@ require get_template_directory() . '/Components/SubscribeWidget/SubscribeWidget.
 require get_template_directory() . '/Components/Icons/Icons.php';
 
 function SiteHeader() {
-?>
-<header id='siteHeader'>
-    <div id='topBar'>
-        <h1>
-            <?= get_custom_logo(); ?>
-        </h1>
-        <div id='headerButtons'>
-            <?php SubscribeWidget() ?>
-            <?=HeaderNavMobile()?>
+    ?>
+    <header id='siteHeader'>
+        <div id='topBar'>
+            <h1>
+                <?= get_custom_logo(); ?>
+            </h1>
+            <div id='headerButtons'>
+                <?php SubscribeWidget() ?>
+                <?=HeaderNavMobile()?>
+            </div>
+            <?=Icons()?>
         </div>
-        <?=Icons()?>
-    </div>
-    <?=HeaderNav()?>
-</header>
-<?php
+        <?=HeaderNav()?>
+    </header>
+    <?php
 }
 

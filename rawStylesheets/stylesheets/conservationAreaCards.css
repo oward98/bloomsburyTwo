@@ -1,6 +1,22 @@
+#conservationAreasBanner {
+    margin-top: 60px;
+}
+
+.conservationAreaCard.pagePreview {
+    margin-bottom: 60px;
+}
+
 .conservationAreaCard header h3 {
     margin: 5px 0;
     font-size: 1.6em;
+}
+
+#bloomsbury {
+    flex-basis: 100%;
+}
+
+#bloomsbury .pageThumbnailContainer {
+   height: 500px;
 }
 
 .conservationAreaCard header span {
@@ -17,9 +33,5 @@
     margin-left: -10px;
     margin-right: -10px;
     margin-bottom: -10px;
-    border-bottom-left-radius: 1px;
-    border-bottom-right-radius: 1px;
-    background-color: var(--very_dark_grey);
-    color: var(--light_grey);
     font-size: 0.9em;
 }

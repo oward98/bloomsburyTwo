@@ -22,16 +22,16 @@
 
         function returnCard() {
             ?>
-                <a id=<?=$this->id?> aria-label='<?=$this->name?> Conservation Area' class='pagePreview bordered conservationAreaCard' href=<?=get_permalink($this->pageID)?>>
+                <a id=<?=$this->id?> aria-label='<?=$this->name?> Conservation Area' class='pagePreview conservationAreaCard' href=<?=get_permalink($this->pageID)?>>
                     <div class='pageThumbnailContainer'>
                     <?=get_the_post_thumbnail($this->pageID, 'full')?>
                     </div>
-                    <div class='padded grow verticalFlex'>
+                    <div class='padded verticalFlex'>
                         <header>
                             <h3><?=$this->name?></h3>
                             <span><?=$this->span?></span>
                         </header>
-                        <div class='grow'>
+                        <div class=''>
                             <?=$this->description?>
                         </div>
                         <div class='conservationAreaDetails padded'>

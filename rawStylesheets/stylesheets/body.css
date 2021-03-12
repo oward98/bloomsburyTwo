@@ -6,6 +6,10 @@
     top: 0;
 }
 
+.maxWidth {
+    max-width: 1600px;
+    margin: 0 auto;
+}
 
 #homepageMain section {
     border-bottom: 1px solid var(--dark_grey);

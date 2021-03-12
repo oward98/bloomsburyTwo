@@ -22,11 +22,43 @@
     color: var(--mid_grey);
 }
 
-@media only screen and (max-width: 380px) {
-    .bodyHeader {
-        margin: 5px;
+@media only screen and (max-width: 650px) {
+    .bodyHeader .bodyTitle {
+        font-size: 1.5em;
     }
-    .bodyTitle {
-        margin-bottom: 9px;
+
+    .bodyHeader span {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .bodyHeader .bodyTitle {
+        font-size: 1.2em;
+    }
+
+    .bodyHeader span {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .bodyHeader {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .bodyHeader {
+        margin-top: 40%;
+        margin-bottom: 40%;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .bodyHeader .bodyTitle {
+        font-size: 1.4em;
     }
 }
