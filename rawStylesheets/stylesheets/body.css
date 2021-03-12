@@ -1,9 +1,7 @@
 #mainArea {
     background-color: var(--white);
     padding: 0 var(--outer_padding);
-    min-height: 100vh; 
-    position: sticky;
-    top: 0;
+    min-height: 100vh;
 }
 
 .maxWidth {
