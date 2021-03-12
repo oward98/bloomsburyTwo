@@ -1,13 +1,6 @@
-/*
-Theme Name: Bloomsbury
-Author: Owen Ward
-Version: 1.0.0
-Description: A custom theme for the BCAAC. Must be used with optimisers to minify files.
-GitHub Theme URI: https://github.com/oward98/bloomsbury-theme
-GitHub Branch: Master
-*/
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('./stylesheets/global.css');
 @import url('./stylesheets/body.css');
 @import url('./stylesheets/bodyBanner.css');
@@ -19,5 +12,4 @@ GitHub Branch: Master
 @import url('./stylesheets/single.css');
 @import url('./stylesheets/page.css');
 @import url('./stylesheets/backgroundImage.css');
-
-@import url('./stylesheets/all.css');
+@import url('./stylesheets/components.css');

@@ -1,0 +1,32 @@
+.bodyTitle {
+    margin: 0 0 10px 0;
+    font-size: 2em;
+    color: white;
+}
+
+.bodyHeader {
+    color: var(--white);
+    margin: 15% 20px 15% 0;
+    background-color: rgba(0,0,0,0.8);
+    padding: var(--outer_padding);
+    max-width: 500px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top: 0.5px solid rgba(90,90,90,0.6);
+    border-right: 0.5px solid rgba(90,90,90,0.6);
+    border-bottom: 0.5px solid rgba(90,90,90,0.6);
+}
+
+.bodyHeader p, .bodyHeader span {
+    margin: 0;
+    color: var(--mid_grey);
+}
+
+@media only screen and (max-width: 380px) {
+    .bodyHeader {
+        margin: 5px;
+    }
+    .bodyTitle {
+        margin-bottom: 9px;
+    }
+}

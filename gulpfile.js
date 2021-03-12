@@ -5,19 +5,21 @@ const transpiler = require('postcss-preset-env');
 const minifier = require('cssnano');
 const combiner = require('postcss-import');
 const concat = require('gulp-concat');
+const header = require('gulp-header');
+const dirSync = require('sync-directory');
 
-const concatCSS = () => {
+const extractComponentCSS = () => {
     return (
-        src('Components/**/*.css')
-        .pipe(concat('all.css'))
+        src('./theme/Components/**/*.css')
+        .pipe(concat('components.css'))
         .pipe(dest('./rawStylesheets/stylesheets'))
     );
 }
 
-const concatJS = () => {
+const extractComponentJS = () => {
     return (
-        src('Components/**/*.js')
-        .pipe(concat('all.js'))
+        src('./theme/Components/**/*.js')
+        .pipe(concat('components.js'))
         .pipe(dest('./processedStylesheets'))
     );
 }
@@ -54,14 +56,47 @@ const transpileCSS = () => {
         src('./processedStyleSheets/2minifiedStylesheet.css')
         .pipe(postcss(plugin))
         .pipe(rename('3transpiledStylesheet.css'))
-        .pipe(dest('./processedStyleSheets'))
+        .pipe(dest('./processedStylesheets'))
     )
 }
 
-const updateCSS = () => {
-    watch('./rawStylesheets/stylesheets/*.css', series(combineCSS, minifyCSS, transpileCSS));
-    watch('./rawStylesheets/style.css', series(combineCSS, minifyCSS, transpileCSS));
-    watch('./Components/**/*', series(concatCSS, concatJS));
+const CSSHeader = `/*
+    Theme Name: Bloomsbury
+    Author: Owen Ward
+    Version: 1.0.0
+    Description: A custom theme for the BCAAC. Backwards compatible to legacy browsers.
+    GitHub Theme URI: https://github.com/oward98/bloomsbury-theme
+    GitHub Branch: Master
+*/`
+
+const addCSSHeader = () => {
+    return (
+        src('./processedStylesheets/3transpiledStylesheet.css')
+        .pipe(header(CSSHeader))
+        .pipe(rename('4final.css'))
+        .pipe(dest('./processedStylesheets'))
+    )
 }
 
-exports.default = updateCSS;
+const copyCSSToTheme = () => {
+    return (
+        src('./processedStylesheets/4final.css')
+        .pipe(rename('style.css'))
+        .pipe(dest('./theme'))
+    )
+}
+
+const updateEverything = () => {
+    //extract css and js for each component, to put into 'components.css'
+    watch('./theme/Components/**/*', series(extractComponentCSS, extractComponentJS));
+    //general stylesheets might change, force update on master style.css
+    watch('./rawStylesheets/stylesheets/*.css', series(combineCSS,  minifyCSS, transpileCSS, addCSSHeader, copyCSSToTheme));
+    //all stylesheets end up in this file due to above, so when it changes, begin the final optimisations
+    watch('./rawStylesheets/style.css', series(combineCSS, minifyCSS, transpileCSS, addCSSHeader, copyCSSToTheme));
+
+    watch('./**/*', series(() => dirSync('/Users/hannahkhalique-brown/Desktop/SHEN/DEV/bloomsbury/theme', '/Users/hannahkhalique-brown/Sites/BCAAC/wp-content/themes/bloomsburyLink', {
+        watch: true
+    } )))
+}
+
+exports.default = updateEverything;

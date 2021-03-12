@@ -1,44 +1,26 @@
 #postMain {
+    --main-top-padding: 40px;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 0 0 0;
-    border-top: 1px solid var(--mid_grey);
-    border-bottom: 1px solid var(--light_grey);
     justify-content: space-between;
-    --gutter-width: var(--outer_padding);
-    --negative-gutter-width: calc(var(--outer_padding) - var(--outer_padding) - var(--outer_padding));
-    margin-left: var(--negative-gutter-width);
-    margin-right: var(--negative-gutter-width);
+    max-width: 1500px;
+    padding: var(--main-top-padding) 0 50px 0;
+    border-bottom: 1px solid var(--light_grey);
+    margin: 0 auto;
 }
 
 #postContent {
     flex-basis: 500px;
-    flex-grow: 1.2;
-    margin: -20px var(--gutter-width) 0 var(--gutter-width);
+    flex-grow: 10;
+    max-width: 600px;
     overflow: hidden;
-    font-size: 1.25em;
-    color: var(--dark_grey);
-    border-right: 1px solid var(--light_grey);
-    padding: 20px 20px 20px 0px;
-}
-
-main.fullWidth {
-    padding-top: 0px;
+    color: rgb(34, 34, 34);
+    padding: var(--main-top-padding) 40px 20px 0px;
+    margin-top: calc(var(--main-top-padding) - 2*var(--main-top-padding));
 }
 
 #postContent h2, #postContent h3, #postContent h4 {
     color: var(--very_dark_grey);
-}
-
-#postContent h2 {
-    margin-top: 20px;
-    margin-bottom: 12px;
-    font-size: 1.5em
-}
-
-#postContent h3 {
-    font-size: 1.25em;
-    margin-bottom: 12px;
 }
 
 #postMain .pageThumbnailContainer {
@@ -64,27 +46,19 @@ main.fullWidth {
     margin-left: -8px;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1200px) {
     #postContent {
-        flex-basis: 800px;
-        border-right: none;
-        padding-right: 0;
+        padding-left: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    #postContent p {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 1em;
+    .wp-block-image {
+        width: calc(100% + 80px);
+        margin-left: -40px;
+        margin-right: -40px;
     }
 
-    #postContent h1, #postContent h2, #postContent h3, #postContent h4, #postContent h5, #postContent h6 {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    #postContent h2 {
-        font-size: 1.5em;
-    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -93,7 +67,18 @@ main.fullWidth {
     }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 720px) {
+    #postContent {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .wp-block-image {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
     #postContent p {
         padding-left: 0px;
         padding-right: 0px;
@@ -103,5 +88,14 @@ main.fullWidth {
     #postContent h1, #postContent h2, #postContent h3, #postContent h4, #postContent h5, #postContent h6 {
         padding-left: 0px;
         padding-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .wp-block-image {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+        z-index: 2;
     }
 }

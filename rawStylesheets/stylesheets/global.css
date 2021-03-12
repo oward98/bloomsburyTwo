@@ -2,27 +2,30 @@ html {
     --light_blue: #6a97a8;
     --dark_blue: #1c617a;
     --turqoise: rgb(3, 44, 39);
-    --white: rgb(255, 255, 254);
+    --white: white;
     --very_light_grey: rgb(217, 220, 221);
     --light_grey: #bdbdbd;
     --mid_grey: #8f8f8f;
     --dark_grey: rgb(62, 62, 63);
     --very_dark_grey: #131613;
     --radius: 2px;
-    --font: 'serif';
-    --outer_padding: 22px;
-    background-color: var(--dark_grey);
+    --font: 'Times';
+    --outer_padding: 20px;
+    background-color: black;
     font-size: 18px;
+    font-family: var(--font);
+    height: 100vh;
 }
 
 body {
-    max-width: 1400px;
-    width: 95vw;
+    width: 100%;
     font-family: var(--font);
     margin: 0 auto;
     color: var(--very_dark_grey);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+    overflow: scroll;
 }
 
 input, button {
@@ -32,6 +35,39 @@ input, button {
 h1, h2, h3, h4, h5, h6 {
     color: var(--very_dark_grey);
     font-weight: 500;
+}
+
+article p,
+article a,
+article span,
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+article h2 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 1.5em
+}
+
+article h3 {
+    font-size: 1.25em;
+    margin-bottom: 12px;
+}
+
+article p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+article {
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 a {
@@ -56,13 +92,6 @@ a:hover, a:focus {
 
 button:hover {
     cursor: pointer;
-}
-
-.fullWidth {
-    margin-left: calc(var(--outer_padding) - var(--outer_padding) - var(--outer_padding));
-    margin-right: calc(var(--outer_padding) - var(--outer_padding) - var(--outer_padding));
-    padding-left: var(--outer_padding);
-    padding-right: var(--outer_padding);
 }
 
 strong {
