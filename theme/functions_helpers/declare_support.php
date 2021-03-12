@@ -11,9 +11,14 @@ function configure_logo() {
 }
 
 function declare_support() {
+    /*logo set up*/
     configure_logo();
+    /*excerpts for top of page summary and SEO*/
     add_post_type_support('page', 'excerpt');
+    /*'featured images' for pages and posts*/
     add_theme_support('post-thumbnails');
+    /*wide aligned images for gutenberg*/
+    add_theme_support('align-wide');
 };
 
 function allow_svg_uploads($mimes) {

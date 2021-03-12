@@ -187,6 +187,17 @@ hr.wp-block-separator {
     margin-left: var(--gutter_width);
     margin-right: var(--gutter_width);
 }
+#pageContent .wp-block-image {
+    margin: 30px 0;
+    max-width: 600px;
+}
+#pageContent .wp-block-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+#pageContent .wp-block-image.alignfull {
+    max-width: 100%; 
+}
 .bodyBanner {
     margin: 5px 0;
     padding: 20px 0;
@@ -327,6 +338,7 @@ mark.lowSignificance {
     margin: 0 auto;
 }
 #postContent {
+    align-self: end;
     flex-basis: 500px;
     flex-grow: 10;
     max-width: 600px;
@@ -364,7 +376,7 @@ mark.lowSignificance {
         margin-right: auto;
     }
 
-    .wp-block-image {
+    #postContent .wp-block-image {
         width: calc(100% + 80px);
         margin-left: -40px;
         margin-right: -40px;
@@ -382,7 +394,7 @@ mark.lowSignificance {
         padding-right: 0;
     }
 
-    .wp-block-image {
+    #postContent .wp-block-image {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
@@ -400,7 +412,7 @@ mark.lowSignificance {
     }
 }
 @media only screen and (max-width: 620px) {
-    .wp-block-image {
+    #postContent .wp-block-image {
         width: calc(100% + 40px);
         margin-left: -20px;
         margin-right: -20px;
@@ -424,6 +436,7 @@ mark.lowSignificance {
     color: var(--dark_grey);
     margin-left: 50px;
     margin-right: 50px;
+    align-self: end;
 }
 #pageMain #navSidebar {
     max-width: 300px;

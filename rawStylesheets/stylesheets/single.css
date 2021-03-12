@@ -10,6 +10,7 @@
 }
 
 #postContent {
+    align-self: end;
     flex-basis: 500px;
     flex-grow: 10;
     max-width: 600px;
@@ -53,7 +54,7 @@
         margin-right: auto;
     }
 
-    .wp-block-image {
+    #postContent .wp-block-image {
         width: calc(100% + 80px);
         margin-left: -40px;
         margin-right: -40px;
@@ -73,7 +74,7 @@
         padding-right: 0;
     }
 
-    .wp-block-image {
+    #postContent .wp-block-image {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
@@ -92,7 +93,7 @@
 }
 
 @media only screen and (max-width: 620px) {
-    .wp-block-image {
+    #postContent .wp-block-image {
         width: calc(100% + 40px);
         margin-left: -20px;
         margin-right: -20px;

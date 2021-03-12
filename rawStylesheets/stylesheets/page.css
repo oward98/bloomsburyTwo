@@ -16,6 +16,7 @@
     color: var(--dark_grey);
     margin-left: 50px;
     margin-right: 50px;
+    align-self: end;
 }
 
 #pageMain #navSidebar {
