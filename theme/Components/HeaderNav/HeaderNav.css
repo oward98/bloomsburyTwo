@@ -71,18 +71,30 @@
 #siteHeader .sub-menu {
     max-height: 0;
     overflow: hidden;
-    padding: 5px 5px 0 5px;
+    padding: 20px 5px 0 5px;
     transition: max-height 0.5s ease-in-out;
     position: absolute;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0);
     z-index: 5;
 }
 
 #siteHeader .sub-menu li {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 3px 5px;
+    background-color: rgba(0,0,0,0.8);
+    margin: 0;
+    padding: 10px;
     font-size: 1em;
+}
+
+#siteHeader .sub-menu li:first-of-type {
+    padding-top: 15px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+#siteHeader .sub-menu li:last-of-type {
+    padding-bottom: 15px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 #siteHeader .menu-item-has-children:hover ul {
@@ -112,9 +124,11 @@
         max-height: 1000px;
         overflow: visible;
         position: static;
+        background-color: rgba(0,0,0,0);
     }
 
-    #headerNav li li {
+    #headerNav .sub-menu li {
         border-bottom: none;
+        background-color: transparent;
     }
 }

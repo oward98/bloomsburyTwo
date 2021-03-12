@@ -25,12 +25,12 @@ function insert_slideshow_images() {
         $ID = $slideshow_element->ID;
         ?>
             <div class='slide'>
-            <a href=<?=get_permalink($ID)?>>
-                <div class='imageContainer'>
-                    <?=get_the_post_thumbnail($ID, 'full')?>
-                </div>
-            </a>
-        </div>
+                
+                    <div class='imageContainer'>
+                        <?=get_the_post_thumbnail($ID, 'full')?>
+                    </div>
+                
+            </div>
         <?php
     };
 }
@@ -41,11 +41,15 @@ function insert_slideshow_caption() {
     foreach($slideshow_array as $slideshow_element) {
         $ID = $slideshow_element->ID;
         ?>
+        <a href=<?=get_permalink($ID)?> style="display: block;">
             <div class='slide'>
-            <div class='slideshowCaption'>
-                <?=get_post_meta($ID, 'slideshow_text', true)?>
+                <a href=<?=get_permalink($ID)?>>
+                    <div class='slideshowCaption'>
+                        <?=get_post_meta($ID, 'slideshow_text', true)?>
+                    </div>
+                </a>
             </div>
-        </div>
+        </a>
         <?php
     };
 }
