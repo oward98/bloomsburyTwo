@@ -61,7 +61,7 @@ const transpileCSS = () => {
 }
 
 const CSSHeader = `/*
-    Theme Name: Bloomsbury
+    Theme Name: Bloomsbury Two
     Author: Owen Ward
     Version: 1.0.0
     Description: A custom theme for the BCAAC. Backwards compatible to legacy browsers.
